@@ -14,6 +14,6 @@ spec:
   spec:
    containers:
    - name: crud
-     image: avena/crud:latest
+     image: avena/crud:41
      ports:
        - containerPort: 8080
