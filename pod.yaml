@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: crud
+  labels:
+    name: crud
+spec:
+  containers:
+  - name: crud
+  image:
