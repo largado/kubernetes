@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: teste_jenkins
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+   app: teste_jenkins
+ template:
+  metadata:
+   labels:
+    app: teste_jenkins
+  spec:
+   containers:
+   - name: teste_jenkins
+     image: alpine
+     ports:
+       - containerPort: 8080
